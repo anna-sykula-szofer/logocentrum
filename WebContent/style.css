@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+body {
+	background-color: #a6a9b0;
+	margin: 0;
+}
+
+#container {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+	background-color: white;
+	color: black;
+	height: 84px;
+	border-bottom: 4.5px solid #9F2B68;
+	-webkit-box-shadow: 0 13px 10px -10px rgba(0, 0, 0, 0.3), 0 1px 4px
+		rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 13px 10px -10px rgba(0, 0, 0, 0.3), 0 1px 4px
+		rgba(0, 0, 0, 0.1);
+	box-shadow: 0 13px 10px -10px rgba(0, 0, 0, 0.3), 0 1px 4px
+		rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+	margin-left: 15px;
+	position: absolute;
+}
+
+.portal {
+	background-color: white;
+	color: #263238;
+	margin-left: 198px;
+	height: 42px;
+}
+
+.portal .dupa {
+	background-color: #263238;
+	width: 200px;
+	position: relative;
+	float: right;
+	text-align: center;
+	height: 42px;
+}
+
+.portal .yt, .portal .fb, .portal .vi, .portal .tw {
+	display: inline-block;
+	width: 22px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.portal .fb {
+	background-image: url("images/facebook.png");
+}
+
+.portal .tw {
+	background-image: url("images/twitter.png");
+}
+
+.portal .yt {
+	background-image: url("images/youtube.png");
+}
+
+.portal .vi {
+	background-image: url("images/vimeo.png");
+}
+
+.header .nav {
+	position: relative;
+	background-color: white;
+	padding: 0px;
+	text-align: center;
+	margin-left: 198px;
+	height: 42px;
+	background-position: center;
+}
+
+.header .nav ul {
+	position: relative;
+	background-color: white;
+	padding-top: 6px;
+	vertical-align: middle;
+	display: flex;
+	flex-direction: row;
+	width: 986px;
+	margin: auto;
+	padding-right: 160px;
+}
+
+.nav li {
+	position: relative;
+	padding-left: 23px;
+	padding-right: 25px;
+	width: 50%;
+	display: block;
+	padding-top: 8px;
+	vertical-align: middle;
+	height: 28.2px;
+	font-size: 14px;
+	font-family: "functionpro-demi", Geneva, sans-serif !important;
+}
+
+.nav li.active {
+	background-color: #9F2B68;
+}
+
+
+
+.nav li a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav li.active a{
+ color: white;
+}
+
+
+h1 {
+	margin-top: 0;
+}
+#content {
+	width: 75%;
+	margin: auto;
+	background-color:  white;
+	min-height: 200px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+#title {
+	background: radial-gradient(white, #9F2B68 65%);
+	height: 40px;
+	width: 100%;
+}
+
+.center {
+	width: 75%;
+	margin: auto;
+	background: white;
+}
+#gallery{
+	background: #eee;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+	
+}
+figure {
+	width: 20%;
+	height: 134px;
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid silver;
+	box-sizing: border- box;
+	background: white;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+figure div{
+
+
+width: 100%;
+background-size: cover;
+		
+}
+figure div:hover{
+	box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+.text {
+	width: 50%;
+	folat: left;
+}
+
+#photoGallery{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	float: left;
+	
+}
+
+#text{
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   left: 50%;
+   
+}
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  width: 500px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #9F2B68;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #9F2B68;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
