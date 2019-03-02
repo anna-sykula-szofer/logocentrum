@@ -3,6 +3,7 @@
 body {
 	background-color: #a6a9b0;
 	margin: 0;
+	height: 100%;
 }
 
 #container {
@@ -127,9 +128,8 @@ h1 {
 	width: 75%;
 	margin: auto;
 	background-color:  white;
-	min-height: 200px;
-	padding: 15px;
 	box-sizing: border-box;
+	height: 1000px;
 }
 
 #title {
@@ -296,4 +296,12 @@ figure div:hover{
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+h3{
+
+    color: #9F2B68;
+   font-family: 'Roboto', sans-serif;
+
+
 }
